@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Centro Médico Dental de Ñuñoa</title>
+</head>
+<body>
+    <script>
+        // Arreglo de horas de Traumatología
+        const traumatologia = [
+            { hora: "09:00", especialista: "RENÉ POBLETE", paciente: "ANA GELLONA", rut: "13123329-7", prevision: "ISAPRE" },
+            { hora: "09:30", especialista: "MARIA SOLAR", paciente: "RAMIRO ANDRADE", rut: "12221451-K", prevision: "FONASA" },
+            { hora: "10:00", especialista: "RAUL LOYOLA", paciente: "CARMEN ISLA", rut: "10112348-3", prevision: "ISAPRE" },
+            { hora: "10:30", especialista: "ANTONIO LARENAS", paciente: "PABLO LOAYZA", rut: "13453234-1", prevision: "ISAPRE" },
+            { hora: "12:00", especialista: "MATIAS ARAVENA", paciente: "SUSANA POBLETE", rut: "14345656-6", prevision: "FONASA" }
+        ];
+
+        // Filtrar pacientes con previsión FONASA
+        const pacientesFonasa = traumatologia.filter(consulta => consulta.prevision === "FONASA");
+
+        // Imprimir el listado de pacientes FONASA de Traumatología
+        pacientesFonasa.forEach(consulta => {
+            document.write(`<p>${consulta.paciente} - ${consulta.prevision}</p>`);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Centro Médico Dental de Ñuñoa</title>
+</head>
+<body>
+    <script>
+        // Arreglo de horas de Radiología
+        const radiologia = [
+            {
+                hora: "09:00",
+                especialista: "Juan Perez",
+                paciente: "Ana Martínez",
+                rut: "12345678-9",
+                prevision: "ISAPRE"
+            },
+            {
+                hora: "09:30",
+                especialista: "Maria Lopez",
+                paciente: "Pedro González",
+                rut: "98765432-1",
+                prevision: "FONASA"
+            },
+            {
+                hora: "10:00",
+                especialista: "Carlos Rojas",
+                paciente: "Lucía Díaz",
+                rut: "11223344-5",
+                prevision: "ISAPRE"
+            },
+            {
+                hora: "10:30",
+                especialista: "Josefina Lara",
+                paciente: "Miguel Torres",
+                rut: "22334455-6",
+                prevision: "FONASA"
+            }
+        ];
+
+        // Eliminar el primer elemento del arreglo de Radiología
+        radiologia.shift();
+
+        // Eliminar el último elemento del arreglo de Radiología
+        radiologia.pop();
+
+        // Visualizar el arreglo actualizado
+        console.log(radiologia);
+    </script>
+</body>
+</html>

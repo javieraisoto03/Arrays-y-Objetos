@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Centro Médico Dental de Ñuñoa</title>
+</head>
+<body>
+    <script>
+        // Arreglos de horas por especialidad
+        const traumatologia = [
+            { hora: "09:00", especialista: "RENÉ POBLETE", paciente: "ANA GELLONA", rut: "13123329-7", prevision: "ISAPRE" },
+            { hora: "09:30", especialista: "MARIA SOLAR", paciente: "RAMIRO ANDRADE", rut: "12221451-K", prevision: "FONASA" },
+            { hora: "10:00", especialista: "RAUL LOYOLA", paciente: "CARMEN ISLA", rut: "10112348-3", prevision: "ISAPRE" },
+            { hora: "10:30", especialista: "ANTONIO LARENAS", paciente: "PABLO LOAYZA", rut: "13453234-1", prevision: "ISAPRE" },
+            { hora: "12:00", especialista: "MATIAS ARAVENA", paciente: "SUSANA POBLETE", rut: "14345656-6", prevision: "FONASA" }
+        ];
+
+        const radiologia = [
+            { hora: "09:00", especialista: "Juan Perez", paciente: "Ana Martínez", rut: "12345678-9", prevision: "ISAPRE" },
+            { hora: "09:30", especialista: "Maria Lopez", paciente: "Pedro González", rut: "98765432-1", prevision: "FONASA" },
+            { hora: "10:00", especialista: "Carlos Rojas", paciente: "Lucía Díaz", rut: "11223344-5", prevision: "ISAPRE" },
+            { hora: "10:30", especialista: "Josefina Lara", paciente: "Miguel Torres", rut: "22334455-6", prevision: "FONASA" }
+        ];
+
+        const dental = [
+            { hora: "08:30", especialista: "ANDREA ZUÑIGA", paciente: "MARCELA RETAMAL", rut: "11123425-6", prevision: "ISAPRE" },
+            { hora: "11:00", especialista: "MARIA PIA ZAÑARTU", paciente: "ANGEL MUÑOZ", rut: "9878789-2", prevision: "ISAPRE" }
+        ];
+
+        // Unir todos los nombres de pacientes
+        let pacientes = [];
+        traumatologia.forEach(consulta => pacientes.push(consulta.paciente));
+        radiologia.forEach(consulta => pacientes.push(consulta.paciente));
+        dental.forEach(consulta => pacientes.push(consulta.paciente));
+
+        // Imprimir el listado total de pacientes
+        pacientes.forEach(paciente => {
+            document.write(`<p>${paciente}</p>`);
+        });
+    </script>
+</body>
+</html>

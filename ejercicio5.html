@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Centro Médico Dental de Ñuñoa</title>
+</head>
+<body>
+    <script>
+        // Arreglo de horas de Dental
+        const dental = [
+            { hora: "08:30", especialista: "ANDREA ZUÑIGA", paciente: "MARCELA RETAMAL", rut: "11123425-6", prevision: "ISAPRE" },
+            { hora: "11:00", especialista: "MARIA PIA ZAÑARTU", paciente: "ANGEL MUÑOZ", rut: "9878789-2", prevision: "ISAPRE" },
+            { hora: "12:30", especialista: "LUIS PEREZ", paciente: "ANA SEPULVEDA", rut: "12345678-9", prevision: "ISAPRE" },
+            { hora: "14:00", especialista: "JUAN MARTINEZ", paciente: "CARLOS GOMEZ", rut: "98765432-1", prevision: "FONASA" }
+        ];
+
+        // Filtrar pacientes con previsión ISAPRE
+        const pacientesIsapre = dental.filter(consulta => consulta.prevision === "ISAPRE");
+
+        // Imprimir el listado de pacientes ISAPRE
+        pacientesIsapre.forEach(consulta => {
+            document.write(`<p>${consulta.paciente} - ${consulta.prevision}</p>`);
+        });
+    </script>
+</body>
+</html>

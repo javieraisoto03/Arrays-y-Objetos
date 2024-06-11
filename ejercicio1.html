@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Centro Médico Dental de Ñuñoa</title>
+</head>
+<body>
+    <script>
+        // Arreglo de horas de Traumatología
+        const traumatologia = [
+            {
+                hora: "08:00",
+                especialista: "Zoe Rey",
+                paciente: "José González",
+                rut: "11123456-7",
+                prevision: "ISAPRE"
+            },
+            {
+                hora: "08:30",
+                especialista: "Julián Pérez",
+                paciente: "María Núñez",
+                rut: "12123456-8",
+                prevision: "FONASA"
+            },
+            // Más datos...
+        ];
+
+        // Aquí puedes agregar las nuevas horas
+        const nuevasHoras = [
+            { hora: "09:00", especialista: "RENÉ POBLETE", paciente: "ANA GELLONA", rut: "13123329-7", prevision: "ISAPRE" },
+            { hora: "09:30", especialista: "MARIA SOLAR", paciente: "RAMIRO ANDRADE", rut: "12221451-K", prevision: "FONASA" },
+            { hora: "10:00", especialista: "RAUL LOYOLA", paciente: "CARMEN ISLA", rut: "10112348-3", prevision: "ISAPRE" },
+            { hora: "10:30", especialista: "ANTONIO LARENAS", paciente: "PABLO LOAYZA", rut: "13453234-1", prevision: "ISAPRE" },
+            { hora: "12:00", especialista: "MATIAS ARAVENA", paciente: "SUSANA POBLETE", rut: "14345656-6", prevision: "FONASA" }
+        ];
+
+        nuevasHoras.forEach(hora => traumatologia.push(hora));
+
+        // Visualizar el arreglo actualizado
+        console.log(traumatologia);
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Centro Médico Dental de Ñuñoa</title>
+</head>
+<body>
+    <script>
+        // Arreglo de horas de Dental
+        const dental = [
+            {
+                hora: "08:30",
+                especialista: "ANDREA ZUÑIGA",
+                paciente: "MARCELA RETAMAL",
+                rut: "11123425-6",
+                prevision: "ISAPRE"
+            },
+            {
+                hora: "11:00",
+                especialista: "MARIA PIA ZAÑARTU",
+                paciente: "ANGEL MUÑOZ",
+                rut: "9878789-2",
+                prevision: "ISAPRE"
+            },
+            // Más datos...
+        ];
+
+        // Función para imprimir las consultas de Dental en el formato solicitado
+        function imprimirConsultasDental(consultas) {
+            consultas.forEach(consulta => {
+                const consultaStr = `${consulta.hora} - ${consulta.especialista} - ${consulta.paciente} - ${consulta.rut} - ${consulta.prevision}`;
+                document.write(`<p>${consultaStr}</p>`);
+            });
+        }
+
+        // Llamar a la función para imprimir las consultas de Dental
+        imprimirConsultasDental(dental);
+    </script>
+</body>
+</html>
+
